@@ -21,7 +21,7 @@ stage('Copy Files') {
                 // Make sure the destination directory exists
                 sh 'mkdir -p /var/www/dev'
                 // Copy the files using cp, with sudo if necessary
-                sh 'cp -r dist/ /var/www/dev/'
+                sh 'sudo cp -r dist/ /var/www/dev/'
             }
         }
 
